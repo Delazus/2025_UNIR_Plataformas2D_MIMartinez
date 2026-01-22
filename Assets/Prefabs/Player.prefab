@@ -221,7 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ac9c621557db6449caa90781ece211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SistemaVidas
-  vidas: 100
+  vidas: 90
+  destruirAlMorir: 1
 --- !u!1 &2481462329529287549
 GameObject:
   m_ObjectHideFlags: 0

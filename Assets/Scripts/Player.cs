@@ -85,14 +85,14 @@ public class Player : MonoBehaviour
             wasGrounded = false;
         }
 
-        //Shoot
+        //Attack
         if (doShoot)
         {
             doShoot = false;
             if (animator.GetBool("IsWalking"))
-            { animator.SetTrigger("Shoot-Run"); }
+            { animator.SetTrigger("Attack-Run"); }
             else
-            { animator.SetTrigger("Shoot"); }
+            { animator.SetTrigger("Attack"); }
         }
 
     }

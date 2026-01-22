@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BolaFuego
   impulsoDisparo: 10
-  danhoAtaque: 20
+  danhoAtaque: 15
 --- !u!58 &2350123428423749492
 CircleCollider2D:
   m_ObjectHideFlags: 0

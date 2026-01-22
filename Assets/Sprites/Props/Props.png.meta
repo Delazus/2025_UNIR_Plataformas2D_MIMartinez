@@ -400,7 +400,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Props_10
+      name: floating-platform
       rect:
         serializedVersion: 2
         x: 7
@@ -606,7 +606,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -628,7 +628,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -656,7 +656,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Key: 1360327325
-      Props_10: 4730907938173302739
       Props_11: 6502129103713456404
       Props_12: -8887605192545522
       Props_13: 4802373616577951091
@@ -673,6 +672,7 @@ TextureImporter:
       Props_7: -9085773957535209297
       Props_8: 4556875247267356194
       Props_9: 5595747086137543514
+      floating-platform: 4730907938173302739
       terminal1: 7265313343042191254
       terminal2: -4871644234308700824
       trap: -686296340
