@@ -977,17 +977,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &180013954 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3668097576250314490, guid: 484ff59c40b7153448539f4d5d899d41, type: 3}
-  m_PrefabInstance: {fileID: 1996808569}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &196853192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,56 +1671,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &329939050
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 329939052}
-  - component: {fileID: 329939051}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &329939051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329939050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8edfbe69fb3fb94eb23c3801de4508d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  menuPrincipal: {fileID: 625368581}
-  menuJuegoTerminado: {fileID: 1539635292}
-  menuGanaste: {fileID: 665076846}
-  scoreText: {fileID: 180013954}
-  player: {fileID: 1636725261}
-  puntosParaGanar: 1
---- !u!4 &329939052
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329939050}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &333977509
 GameObject:
   m_ObjectHideFlags: 0
@@ -11975,11 +11914,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &625368581 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8430744797260671466, guid: 484ff59c40b7153448539f4d5d899d41, type: 3}
-  m_PrefabInstance: {fileID: 1996808569}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &643986433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12150,11 +12084,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655791797}
   m_CullTransparentMesh: 1
---- !u!1 &665076846 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8450891262366012784, guid: 484ff59c40b7153448539f4d5d899d41, type: 3}
-  m_PrefabInstance: {fileID: 1996808569}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &696002400
 GameObject:
   m_ObjectHideFlags: 0
@@ -75109,16 +75038,6 @@ Transform:
   - {fileID: 1254819664}
   m_Father: {fileID: 2024879947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1539635292 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 74084976390641616, guid: 484ff59c40b7153448539f4d5d899d41, type: 3}
-  m_PrefabInstance: {fileID: 1996808569}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1636725261 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1734826107940666434, guid: f638c10c7ab5e7245a1c112bc8816342, type: 3}
-  m_PrefabInstance: {fileID: 2848901180619336312}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1636725273 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4260466223712049155, guid: f638c10c7ab5e7245a1c112bc8816342, type: 3}
@@ -77979,4 +77898,3 @@ SceneRoots:
   - {fileID: 696002401}
   - {fileID: 1996808569}
   - {fileID: 134232133}
-  - {fileID: 329939052}
