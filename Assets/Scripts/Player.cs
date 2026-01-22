@@ -8,14 +8,17 @@ public class Player : MonoBehaviour
     private Animator animator;
     private Collider2D col;
 
+    [Header("Sistema de movimiento")]
     [SerializeField] float walkSpeed = 3f;
     [SerializeField] float jumpSpeed = 10f;
-
-    [Header("Ground")]
     [SerializeField] LayerMask groundLayer;
-
-    [Header("Jump")]
     [SerializeField] int maxJumps = 2; // doble salto
+
+    [Header("Sistema de combate")]
+    [SerializeField] private Transform puntoAtaque;
+    [SerializeField] private float radioAtaque;
+    [SerializeField] private float danhoAtaque;
+    [SerializeField] private LayerMask queEsDanhable;
 
     void Start()
     {
@@ -43,7 +46,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         UpdateRawMove();
-        Shoot();
+        LanzarAtaque();
 
         // En el suelo
         bool grounded = col.IsTouchingLayers(groundLayer);
@@ -107,9 +110,25 @@ public class Player : MonoBehaviour
             { mustJump = true; }
     }
 
-    private void Shoot()
+    private void LanzarAtaque()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         { doShoot = true; }
+    }
+
+    //Se ejecuta desde evento de animación
+    private void Ataque()
+    {
+        Collider2D[] collidersTocados = Physics2D.OverlapCircleAll(puntoAtaque.position, radioAtaque, queEsDanhable);
+        foreach (Collider2D item in collidersTocados)
+        {
+            SistemaVidas sistemaVidas = item.gameObject.GetComponent<SistemaVidas>();
+            sistemaVidas.RecibirDanho(danhoAtaque);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(puntoAtaque.position, radioAtaque);
     }
 }
