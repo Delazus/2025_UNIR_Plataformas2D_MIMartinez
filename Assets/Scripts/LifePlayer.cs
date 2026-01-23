@@ -22,7 +22,6 @@ public class LifePlayer : MonoBehaviour
             }
         }
     }
-
     void Update()
     {
         if (sistemaVidasJugador != null)
@@ -33,7 +32,6 @@ public class LifePlayer : MonoBehaviour
 
         ShowHearth();
     }
-
     void ShowHearth()
     {
         for (int i = 0; i < corazones.Length; i++)

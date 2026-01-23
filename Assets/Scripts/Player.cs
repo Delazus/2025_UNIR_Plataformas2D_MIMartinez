@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float radioAtaque;
     [SerializeField] private float danhoAtaque;
     [SerializeField] private LayerMask queEsDanhable;
+    [SerializeField] private AudioSource shootAudioSource1;
+    [SerializeField] private AudioSource shootAudioSource2;
 
     void Start()
     {
@@ -107,13 +109,26 @@ public class Player : MonoBehaviour
             { rawMove += Vector2.right; }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame) 
-            { mustJump = true; }
+        { 
+            mustJump = true;
+            // Reproducir el sonido
+            if (shootAudioSource1 != null)
+            {
+                shootAudioSource1.Play();
+            }
+        }
     }
 
     private void LanzarAtaque()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
-        { doShoot = true; }
+        { 
+            doShoot = true;
+            if (shootAudioSource2 != null)
+            {
+                shootAudioSource2.Play();
+            }
+        }
     }
 
     //Se ejecuta desde evento de animación

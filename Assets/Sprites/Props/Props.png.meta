@@ -641,6 +641,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Up_Effector
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 30
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39ee2888431beb4e98a1259fbb57ee2
+      internalID: -824831677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -672,6 +694,7 @@ TextureImporter:
       Props_7: -9085773957535209297
       Props_8: 4556875247267356194
       Props_9: 5595747086137543514
+      Up_Effector: -824831677
       floating-platform: 4730907938173302739
       terminal1: 7265313343042191254
       terminal2: -4871644234308700824
