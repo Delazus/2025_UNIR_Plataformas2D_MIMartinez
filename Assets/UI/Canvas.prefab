@@ -1831,6 +1831,8 @@ MonoBehaviour:
   - {fileID: 8624002041736461586}
   - {fileID: 2142229082666490030}
   - {fileID: 1881414310233244619}
+  sistemaVidasJugador: {fileID: 0}
+  vidaPorCorazon: 30
 --- !u!1 &3511104003245796197
 GameObject:
   m_ObjectHideFlags: 0

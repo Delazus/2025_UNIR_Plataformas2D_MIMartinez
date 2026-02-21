@@ -123,6 +123,8 @@ MonoBehaviour:
   queEsDanhable:
     serializedVersion: 2
     m_Bits: 128
+  shootAudioSource1: {fileID: 0}
+  shootAudioSource2: {fileID: 0}
 --- !u!95 &5491780311266068637
 Animator:
   serializedVersion: 7
